@@ -1,4 +1,3 @@
-
 POPcorn - Movie Explorer App
 
 A fully responsive React web application where users can explore movies, search by title, view trending content, register/login, and save favorites. The backend is built with Node.js, Express, and PostgreSQL (hosted on Neon), supporting user authentication with JWT.
@@ -10,7 +9,6 @@ POPcorn is designed to demonstrate full-stack development skills with modern Rea
 Features
 
 Frontend
-
 Responsive UI built with React
 Movie browsing, search by title
 Trending movies display
@@ -19,7 +17,6 @@ Favorite movies saved locally or synced
 Dark/light mode toggle (optional to implement)
 Profile icon in navbar with dropdown showing user info and logout
 Backend
-
 RESTful API using Express.js
 PostgreSQL database hosted on Neon
 User authentication with hashed passwords (bcrypt) and JWT
