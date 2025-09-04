@@ -25,7 +25,6 @@ function Register() {
         setLoading(true);
         setError('');
 
-        // Validation
         if (formData.password !== formData.confirmPassword) {
             setError('Passwords do not match');
             setLoading(false);
@@ -54,11 +53,9 @@ function Register() {
             const data = await response.json();
 
             if (response.ok) {
-                // Store the token in localStorage
                 localStorage.setItem('token', data.token);
                 localStorage.setItem('user', JSON.stringify(data.user));
                 
-                // Redirect to home page
                 navigate('/');
             } else {
                 setError(data.message || 'Registration failed');
