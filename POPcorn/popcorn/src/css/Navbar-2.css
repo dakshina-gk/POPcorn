@@ -1,4 +1,3 @@
-/* Professional Navbar Styles */
 .navbar {
   background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
   backdrop-filter: blur(10px);
@@ -411,7 +410,6 @@
   }
 }
 
-/* Dark mode enhancements */
 @media (prefers-color-scheme: dark) {
   .profile-dropdown {
     background: rgba(30, 30, 30, 0.95);
@@ -439,7 +437,6 @@
   }
 }
 
-/* Focus states for accessibility */
 .nav-link:focus,
 .profile-button:focus,
 .dropdown-item:focus {
@@ -447,7 +444,6 @@
   outline-offset: 2px;
 }
 
-/* Loading states */
 .profile-button.loading {
   opacity: 0.7;
   cursor: not-allowed;
