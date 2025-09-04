@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useAuth } from '../contexts/AuthContext'; // 👈 import Auth context
+import { useAuth } from '../contexts/AuthContext'; 
 import '../css/Auth.css';
 
 function Login() {
@@ -14,7 +14,7 @@ function Login() {
     const [loading, setLoading] = useState(false);
 
     const navigate = useNavigate();
-    const { login } = useAuth(); // 👈 use login function from AuthContext
+    const { login } = useAuth(); 
 
     const handleChange = (e) => {
         setFormData({
@@ -40,7 +40,7 @@ function Login() {
             const data = await response.json();
 
             if (response.ok) {
-                login(data.user, data.token); // 👈 save user & token globally
+                login(data.user, data.token); 
                 navigate('/');
             } else {
                 setError(data.message || 'Login failed');
