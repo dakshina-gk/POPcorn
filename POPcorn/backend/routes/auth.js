@@ -6,7 +6,7 @@ const { createUser, findUserByEmail } = require('../models/User');
 const router = express.Router();
 const JWT_SECRET = process.env.JWT_SECRET;
 
-// Register
+
 router.post('/register', async (req, res) => {
   const { username, email, password } = req.body;
   try {
@@ -25,7 +25,7 @@ router.post('/register', async (req, res) => {
   }
 });
 
-// Login
+
 router.post('/login', async (req, res) => {
   const { email, password } = req.body;
   try {
